@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        SmartReading-Mandarin 中文適性閱讀系統
+    </title>
+    <link rel="shortcut icon" type="image/x-icon" href="Content/image/favicon.ico" />
+    <!-- jQuery Modal -->
+    <link rel="stylesheet" href="Content/css/jquery.modal.min.css" />
+    <link rel="stylesheet" href="Content/css/SCbook.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_logo">
+            <a href="">
+                <img src="Content/image/photo/logo/logo.svg" alt="">
+            </a>
+        </div>
+    </header>
+    <form name="form1" method="post" action="./scmaps.aspx?p=11&amp;y=7148703" id="form1">
+        <div>
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                value="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" />
+        </div>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            var theForm = document.forms['form1'];
+            if (!theForm) {
+                theForm = document.form1;
+            }
+
+            function __doPostBack(eventTarget, eventArgument) {
+                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                    theForm.__EVENTTARGET.value = eventTarget;
+                    theForm.__EVENTARGUMENT.value = eventArgument;
+                    theForm.submit();
+                }
+            }
+            //]]>
+        </script>
+
+
+        <script
+            src="/WebResource.axd?d=0R-tCne3JVvNbnh7ymaMOGqyvvIduYVu2MM9tWVjGhX9SJXeeQ6sx7fBMFbISGGd7L-T9PrFvPCZH_9v-5NXeIIf4qQ1&amp;t=638465343187615987"
+            type="text/javascript"></script>
+
+
+        <script
+            src="/ScriptResource.axd?d=6quLDrhSqhyqzwCwdUcokhMuR_vVtAJZXGfK-XcbOeEvIEdNMe2YR3mU2Cq3858R04KCS8eZRTq-myoxytxX0qE4D5XVHJOBUD1qq-6bfbh_AQTQGMKxbN7dKxDGVyVtlE1tc0X-gw6qOEw6-IVnLsvdxQt1_1PK2gGEPRX8RwOmW0C70&amp;t=2e7d0aca"
+            type="text/javascript"></script>
+        <script
+            src="/ScriptResource.axd?d=c9mN7QEGGhOx81so1oka6MtaFNUiZogJpeuGrw3S3Su6fIrmKhJD9MJWAD2VXliYO1JyyCjCRuGhnl0rCUfhDU6cttrrzZAKtsdAj9HKatb21jwXBM3-rl9G0Zo5HkXRtwd9HW-stjdoFy08by_zM09IX_Bnb-h1RIo1RtPOyh_L4OQI0&amp;t=2e7d0aca"
+            type="text/javascript"></script>
+        <div>
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2CAEF50C" />
+            <input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+                value="6Fh95qzmK422e9DJe/SipTTyVDy2tiI1A1He8jiJ9w5TKjnY1Xw1iCra/wytztsYKe1tdVc0j+GGtx5Sfz4za4/zSpUSnYhSrG9tuE/GhbB82ZF3RV5YadtnGvC+ilSKerkt0d3tI/UINSdYq8KRvoqKhG4=" />
+        </div>
+        <script type="text/javascript">
+            //<![CDATA[
+            Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', [], [], [], 90, '');
+            //]]>
+        </script>
+
+        <div class="main map-content">
+
+
+            <input name="TB_level" type="text" value="pre" id="TB_level" style="display:none" />
+
+            <div class="book-list-area map-book-list" id="mapbooklist">
+
+
+                <span id="LB_papername">第 1 冊-繁體-第 1 課</span>
+
+                <div class="standard">
+                    <p id="lev1" class="standard_level pre">Level 1</p>
+                    <p id="lev2" class="actflp">ACTFL Level:Novice Low、Novice Mid</p>
+                    <p id="lev3" class="cefrp">CEFR Level:Pre-A1</p>
+                </div>
+
+
+                <div class="book-area" id="bookarealayout">
+
+                    <a href="#book-modals159" class="book-item" rel="modal:open">
+                        <div class="grade-tag pre">
+                            <p>
+                                Level 1
+                            </p>
+                        </div>
+
+                        <div class="book-block">
+                            <div class="book-img" title="我不要">
+                                <img src="Content/image/photo/Bookcover/book-1.jpg" alt="">
+                            </div>
+                            <div class="audio-icon" title="有聲書"></div>
+                        </div>
+
+                        <div class="book-text">
+                            <div class="book-title">
+                                <h4>
+                                    我不要
+                                </h4>
+                            </div>
+                            <div class="book-information">
+                                <p class="sr">分類：小品故事 </p>
+                                <p class="language-system slog_map_tw">繁體</p>
+                                <p class="sr">SR 125</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#book-modals159" class="book-item" rel="modal:open">
+                        <div class="grade-tag a1">
+                            <p>
+                                Level 2
+                            </p>
+                        </div>
+
+                        <div class="book-block">
+                            <div class="book-img" title="我不要">
+                                <img src="Content/image/photo/Bookcover/book-1.jpg" alt="">
+                            </div>
+                            <div class="audio-icon" title="有聲書"></div>
+                        </div>
+
+                        <div class="book-text">
+                            <div class="book-title">
+                                <h4>
+                                    我不要我不要我不要我不要我不要我不要我不要我不要我不要我不要我不要
+                                </h4>
+                            </div>
+                            <div class="book-information">
+                                <p class="sr">分類：小品故事 </p>
+                                <p class="language-system slog_map_tw">繁體</p>
+                                <p class="sr">SR 125</p>
+                            </div>
+                        </div>
+
+                        
+                    </a>
+
+                    <a href="#book-modals159" class="book-item" rel="modal:open">
+                        <div class="grade-tag a2">
+                            <p>
+                                Level 3
+                            </p>
+                        </div>
+
+                        <div class="book-block">
+                            <div class="book-img" title="我不要">
+                                <img src="Content/image/photo/Bookcover/book-1.jpg" alt="">
+                            </div>
+                            <div class="audio-icon" title="有聲書"></div>
+                        </div>
+
+                        <div class="book-text">
+                            <div class="book-title">
+                                <h4>
+                                    我不要
+                                </h4>
+                            </div>
+                            <div class="book-information">
+                                <p class="sr">分類：小品故事 </p>
+                                <p class="language-system slog_map_tw">繁體</p>
+                                <p class="sr">SR 125</p>
+                            </div>
+                        </div>
+
+                        
+                    </a>
+                </div>
+                <span id="Label1"></span>
+
+            </div>
+
+
+
+        </div>
+
+        <div id="book-modals159" class="modal book-information-modal">
+            <div class="book-introduction">
+                <div class="modal-book-img" title="我不要">
+                    <img src="Content/image/photo/Bookcover/book-1.jpg" alt="">
+                    <div class="audio-icon" title="有聲書"></div>
+                </div>
+
+                <div class="introduction-content">
+                    <div class="modal-btn">
+                        <ul>
+                            <li class="cursor introduction active btext1" data-filter=".introduction">
+                                書籍資訊</li>
+                            <li class="cursor vocabulary btext2" data-filter=".vocabulary">詞彙表</li>
+                        </ul>
+                    </div>
+                    <div class="introduction-item">
+                        <div class="item introduction">
+                            <p><span class="btext3">書名：</span><span>我不要</span></p>
+                            <p class="cefrp"><span>CEFR：</span><span>Pre-A1</span></p>
+                            <p class="actflp"><span>ACTFL：</span><span>Novice Mid</span></p>
+
+                            <p><span class="btext6">字數：</span><span>35</span></p>
+                        </div>
+                        <div class="item vocabulary">
+                            <div class="lexical-text">
+                                <p><ruby>
+                                        <rb>不要</rb>
+                                        <rp>(</rp>
+                                        <rt>bú yào</rt>
+                                        <rp>)</rp>
+                                    </ruby></p>
+                                <p> do not want</p>
+                            </div>
+                            <div class="lexical-text">
+                                <p><ruby>
+                                        <rb>來</rb>
+                                        <rp>(</rp>
+                                        <rt>lái</rt>
+                                        <rp>)</rp>
+                                    </ruby></p>
+                                <p> to come</p>
+                            </div>
+                            <div class="lexical-text">
+                                <p><ruby>
+                                        <rb>你們</rb>
+                                        <rp>(</rp>
+                                        <rt>nǐ men</rt>
+                                        <rp>)</rp>
+                                    </ruby></p>
+                                <p> you</p>
+                            </div>
+                            <div class="lexical-text">
+                                <p><ruby>
+                                        <rb>頭</rb>
+                                        <rp>(</rp>
+                                        <rt>tóu</rt>
+                                        <rp>)</rp>
+                                    </ruby></p>
+                                <p> head</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="button">
+                    <a href="sreadingbook.aspx?b=159" target="_blank" class="read cursor btext8">閱讀</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <input name="TB_uarea" type="text" value="亞洲" id="TB_uarea" class="uuarea" style="display:none" />
+
+        <footer class="footer">
+            <div class="products">
+                <p id="lang_text_0026" class="products-text">相關產品</p>
+                <div class="products-img">
+                    <a href="https://empowerchinese.net/v2/index.aspx" class="products-link" target="_blank"><img
+                            src="Content/image/photo/footer/eMPOWER-img.svg" alt=""></a>
+                    <a href="http://smartwriting.org" class="products-link" target="_blank"><img
+                            src="Content/image/photo/footer/SWMlogo-P.svg" alt=""></a>
+                    <a href="https://smartpinyin.net/SmartPinyinDesign/Pages/index.html" class="products-link"
+                        target="_blank"><img src="Content/image/photo/footer/SmartPinyin.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p><a id="lang_text_0027" class="cursor">使用條款</a> | <a id="lang_text_0028" class="cursor">隱私政策</a></p>
+                <p>
+                    © 2024 College of Education e-Learning Lab. NTNU, All rights reserved.<br />
+                </p>
+            </div>
+        </footer>
+    </form>
+</body>
+
+</html>
+
+<script src="Content/js/jquery.min.js"></script>
+<script src="Content/js/jquery.modal.min.js"></script>
+<script src="Content/js/isotope.pkgd.min.js"></script>
+
+<script src="Content/js/jquery.updatepanel.js"></script>
+<script type="text/javascript" nonce="JcsnXxws">
+    $(document).ready(function () {
+            $('.modal-btn ul li.introduction').click(function () {
+                $('.modal-btn ul li').removeClass('active');
+                $('.modal-btn ul li.introduction').addClass('active');
+                var selector = $('.modal-btn ul li.introduction').attr('data-filter');
+                $('.introduction-item').isotope({
+                    filter: selector
+                })
+            });
+            $('.item.vocabulary').hide();
+            $('.modal-btn ul li.vocabulary').click(function () {
+                $('.modal-btn ul li').removeClass('active');
+                $('.modal-btn ul li.vocabulary').addClass('active');
+                $('.item.vocabulary').addClass('active');
+                $('.item.vocabulary').show();
+                var selector = $('.modal-btn ul li.vocabulary').attr('data-filter');
+                $('.introduction-item').isotope({
+                    filter: selector
+                })
+            });
+
+            var bookimgheight = $(".book-img").width();
+            $(".book-img").css({
+                "height": bookimgheight
+            });
+        });
+</script>
